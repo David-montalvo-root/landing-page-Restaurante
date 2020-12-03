@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  font-family: "Allura", cursive;
+  color: #755429;
+  text-shadow: 2px 6px 15px #4e3d25;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #251500;
+}
+
+p,
+a {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 750px;
+  background-image: url(../img/header.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
+  background: linear-gradient(to bottom, #0e131c, transparent);
+}
+
+nav > a {
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav > a:hover {
+  border-bottom: 2px solid white;
+}
+
+.textos {
+  margin-top: 152px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 70px;
+}
+
+.subtitulo {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 6px;
+  width: 128px;
+  border: 2px solid rgb(51, 33, 26);
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 16px;
+  color: white;
+}
+
+.boton:hover {
+  background: rgba(146, 73, 46, 0.3);
+}
+
+.borde-arriba {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 35vh 100vw 0 0;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.borde-abajo {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 35vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 55px 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.titulo-primario {
+  text-align: center;
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.subtitulo-primario {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.parrafo-primario {
+  margin-bottom: 15px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 24px;
+}
+
+.presentacion {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.comida-rapida {
+  margin-top: 35px;
+}
+
+.caja {
+  width: 45%;
+  margin: 10px;
+  text-align: center;
+}
+
+.titulo-secundario {
+  margin: 20px 0;
+  font-size: 45px;
+  text-shadow: none;
+}
+
+.parrafo-secundario {
+  margin-bottom: 25%;
+}
+
+.plato {
+  width: 45%;
+  margin: 10px;
+  border: 1px solid #755429;
+  box-shadow: 3px 3px 10px #755429;
+}
+
+.plato img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.inter {
+  background: url(../img/header2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.local {
+  height: 900px;
+  position: relative;
+  background-image: url(../img/header3.jpg);
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+
+  padding-top: 130px;
+}
+
+.two {
+  margin-top: 48px;
+}
+.inter h1 {
+  text-transform: none;
+  font-size: 60px;
+}
+
+.inter h2 {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.cartas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carta {
+  width: 28%;
+  text-align: center;
+}
+
+.carta img {
+  width: 90%;
+}
+
+.titulo-terciario {
+  margin: 40px 0;
+  font-size: 40px;
+}
+
+.parrafo-terciario {
+  margin: 20px 0;
+  color: white;
+}
+
+.titulo-formulario {
+  text-align: center;
+  font-weight: 600;
+  font-size: 56px;
+  text-shadow: none;
+}
+
+.subtitulo-formulario {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: inline-block;
+  width: 48%;
+  padding: 13px;
+  font-family: "open sans";
+  margin-bottom: 16px;
+  border-color: #755429;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 200px;
+  min-height: 200px;
+  padding: 13px;
+  font-family: "open sans";
+  margin-bottom: 16px;
+  border-color: #755429;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 13px;
+  width: 96px;
+  margin: 10px auto;
+  background: #755429;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  padding: 10px 0;
+  background: #755429;
+  color: white;
+  display: flex;
+}
+
+footer p {
+  margin: auto;
+}
+/*Break points comunes*/
+
+/*Dispositivos grandes(laptops/desktops, 992px y mas)*/
+@media screen and (max-width: 992px) {
+  nav {
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+
+  .flex {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .caja {
+    width: 55%;
+    margin: auto;
+  }
+  .plato {
+    width: 60%;
+    margin: auto;
+    
+  }
+
+  .contrario {
+    flex-direction: column-reverse;
+  }
+
+  .local {
+    height: 1000px;
+  }
+}
+
+/*Dispositivos medianos(tablets apaisadas,768px y mas)*/
+@media screen and (max-width: 768px) {
+  .caja {
+    width: 70%;
+  }
+  .plato {
+    width: 70%;
+  }
+
+  .two {
+    margin-top: 130px;
+  }
+
+  .carta{
+    width: 70%;
+  }
+
+  .cartas {
+    flex-direction: column;
+  }
+
+  .local {
+    height: 1400px;
+  }
+}
+
+/*dispostivos extra pequeños(telefonos) */
+@media screen and (max-width: 400px) {
+  header {
+    height: 640px;
+  }
+
+  .caja {
+    width: 90%;
+  }
+  .plato {
+    width: 90%;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+
+  footer p{
+    padding-bottom: 8px;
+    border-bottom: 1px solid white;
+  }
+
+}
