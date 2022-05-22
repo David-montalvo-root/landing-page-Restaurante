@@ -40,6 +40,8 @@ nav {
   text-align: right;
   padding: 30px 50px 0 0;
   background: linear-gradient(to bottom, #0e131c, transparent);
+  position: relative;
+z-index: 5;
 }
 
 nav > a {
@@ -56,16 +58,50 @@ nav > a:hover {
 .textos {
   margin-top: 152px;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
+
+.overlay{
+  background-color: #00000069;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 150vh;
+}
+
+.overlay1{
+  background-color: #00000069;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 78.2vh;
+}
+
+
+.overlay2{
+  background-color: #00000069;
+  position: absolute;
+  z-index: 1;
+  top: -10vh;
+  width: 100%;
+  height: 200vh;
+}
+.inter .textos{
+  margin-top: 0px;
+}
+
 
 .titulo {
   font-size: 70px;
+  color: #ffffff;
 }
 
 .subtitulo {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 32px;
+  color: #ffffff;
 }
 
 .boton {
@@ -123,6 +159,7 @@ nav > a:hover {
   margin-bottom: 10px;
   font-weight: 600;
   text-shadow: none;
+
 }
 
 .subtitulo-primario {
@@ -339,6 +376,9 @@ footer p {
 
   .local {
     height: 1000px;
+  }
+  .overlay2{
+    height: 400vh;
   }
 }
 
